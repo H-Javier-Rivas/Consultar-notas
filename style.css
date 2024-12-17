@@ -1,0 +1,26 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+    background: url(estudiante.png) no-repeat;
+    background-size: cover;
+}
+
+.form {
+    margin-left: 400px;
+    padding: 10px 20px 0 0;
+}
+
+/* Agrega más estilos aquí para personalizar la apariencia de los elementos */
+
+#resultado {
+    background-color: greenyellow;
+}
