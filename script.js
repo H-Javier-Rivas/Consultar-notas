@@ -98,9 +98,9 @@ const notas = {
       nota.forEach((nota, index) => {
         const li = document.createElement("li");
         if (index == 5) {
-          li.textContent = `Acumulado: ${nota}`;
+          li.textContent = `Acumulado: 📈 ${nota}`;
         } else {
-          li.textContent = `Tema ${index + 1}: ${nota}  puntos`;
+          li.textContent = `Tema ${index + 1}: ✏ ${nota}  puntos`;
         }
         listaNotas.appendChild(li);
       });
