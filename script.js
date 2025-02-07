@@ -1,125 +1,41 @@
-const notas = {
-    "31317951": [5, 5, 8, 0, 0, 0],
-    "33481359": [6, 4, 4, 0, 0, 0],
-    "29906807": [6, 4, 0, 0, 0, 0],
-    "28579804": [0, 0, 0, 0, 0, 0],
-    "31112951": [4, 5, 7.5, 0, 0, 0],
-    "31275423": [7, 6, 6, 0, 0, 0],
-    "30501061": [0, 0, 0, 0, 0, 0],
-    "33027257": [6, 2, 0, 0, 0, 0],
-    "32466047": [0, 0, 0, 0, 0, 0],
-    "31353883": [1, 1, 7, 0, 0, 0],
-    "22590506": [8, 6, 4, 0, 0, 0],
-    "30791499": [0, 0, 0, 0, 0, 0],
-    "31597505": [6, 0, 0, 0, 0, 0],
-    "32505988": [2, 4, 7, 0, 0, 0],
-    "27838077": [2, 5, 7, 0, 0, 0],
-    "31958261": [0, 0, 0, 0, 0, 0],
-    "32341550": [7, 4, 4.5, 0, 0, 0],
-    "30993902": [3, 1, 9, 0, 0, 0],
-    "31594692": [4, 2, 7.5, 0, 0, 0],
-    "32015116": [5, 0, 8, 0, 0, 0],
-    "30001211": [0, 0, 0, 0, 0, 0],
-    "32095004": [6, 6, 7, 0, 0, 0],
-    "32749053": [2, 3, 0, 0, 0, 0],
-    "30656106": [8, 8, 9, 0, 0, 0],
-    "31615846": [6, 0, 3, 0, 0, 0],
-    "31384713": [8, 4, 4, 0, 0, 0],
-    "31963305": [0, 2, 6, 0, 0, 0],
-    "32497970": [8, 4, 5, 0, 0, 0],
-    "30184377": [6, 4, 7, 0, 0, 0],
-    "30810494": [4, 8, 5, 0, 0, 0],
-    "30851581": [0, 0, 0, 0, 0, 0],
-    "30892212": [7, 1, 8, 0, 0, 0],
-    "32198719": [0, 0, 0, 0, 0, 0],
-    "32014868": [1, 5, 7, 0, 0, 0],
-    "32503504": [8, 2, 9, 0, 0, 0],
-    "30366213": [6, 4, 8, 0, 0, 0],
-    "24036155": [0, 0, 0, 0, 0, 0],
-    "32465648": [1, 4, 7, 0, 0, 0],
-    "32340922": [6, 0, 5, 0, 0, 2],
-    "24521788": [2, 7, 7.5, 0, 0, 0],
-    "28619700": [7, 6, 8.5, 0, 0, 0],
-    "27186079": [0, 3, 0, 0, 0, 0],
-    "31995192": [5, 4, 0, 0, 0, 0],
-    "25935373": [8, 4, 6, 0, 0, 0],
-    "31445077": [7, 2, 8.5, 0, 0, 0],
-    "31370511": [5, 4, 7, 0, 0, 0],
-    "31318584": [0, 0, 0, 0, 0, 0],
-    "31159717": [3, 0, 4.5, 0, 0, 0],
-    "32085543": [1, 2, 6, 0, 0, 0],
-    "31781913": [1, 0, 3, 0, 0, 0],
-    "31522163": [6, 7, 7, 0, 0, 0],
-    "26455133": [0, 0, 0, 0, 0, 0],
-    "32059941": [1, 8, 9, 0, 0, 0],
-    "28578870": [6, 2, 8.5, 0, 0, 0],
-    "30656301": [4, 6, 0, 0, 0, 0],
-    "30253681": [0, 0, 0, 0, 0, 0],
-    "32506048": [4, 0, 6.5, 0, 0, 0],
-    "31329861": [7, 6, 8.5, 0, 0, 0],
-    "26753639": [0, 0, 6.5, 0, 0, 0],
-    "28263904": [6, 0, 8.5, 0, 0, 0],
-    "28530748": [0, 8, 9, 0, 0, 0],
-    "32961119": [8, 0, 6, 0, 0, 0],
-    "33135520": [3, 0, 4.5, 0, 0, 0],
-    "31370481": [5, 0, 0, 0, 0, 0],
-    "31435595": [8, 2, 8.5, 0, 0, 0],
-    "33088688": [6, 3, 7, 0, 0, 0],
-    "31292143": [5, 5, 4, 0, 0, 0],
-    "28534789": [0, 0, 0, 0, 0, 0],
-    "31275371": [8, 3, 8.5, 0, 0, 0],
-    "29643651": [1, 6, 8, 0, 0, 0],
-    "32497701": [8, 7, 8.5, 0, 0, 0],
-    "31230695": [3, 0, 2.5, 0, 0, 0],
-    "27644475": [7, 0, 8.5, 0, 0, 0],
-    "30212491": [7, 8, 8.5, 0, 0, 0],
-    "32197084": [2, 0, 6.5, 0, 0, 0],
-    "28754904": [0, 6, 7, 0, 0, 0],
-    "21338678": [5, 0, 0, 0, 0, 0],
-    "27923753": [3, 0, 9.5, 0, 0, 0],
-    "31598108": [6, 0, 0, 0, 0, 0],
-    "31700958": [7, 6, 8.5, 0, 0, 0],
-    "31159684": [3, 4, 7, 0, 0, 0],
-    "28215388": [8, 7, 9, 0, 0, 0],
-    "31318180": [4, 2, 9.5, 0, 0, 0],
-    "8033311": [10, 10, 10, 10, 10, 0],
-    // ... resto de las notas
-  };
-  
-  function mostrarResultado(nota, error) {
-    const resultadoDiv = document.getElementById("resultado");
-    resultadoDiv.innerHTML = ""; // Limpiamos el contenido anterior
-  
-    if (error) {
-      resultadoDiv.textContent = error;
-    } else {
-      const listaNotas = document.createElement("ul");
-      let acum = 0;
-      nota.forEach((nota, index) => {
-        const li = document.createElement("li");
-        if (index == 5) {
-          nota = acum;
-          li.innerHTML = `----------------------------
-          <br /> 📈 Total: <b> ${nota.toFixed(1)} </b> puntos`;
-          acum = 0;
-        } else {
-          acum += nota*0.2;
-          li.textContent = `Tema ${index + 1}: ✏ ${nota.toFixed(1)} x 20%`;
-        }
-        listaNotas.appendChild(li);
-      });
+async function verNota() {
+  const resultadoDiv = document.getElementById("resultado");
+  resultadoDiv.innerHTML = ""; // Limpiamos el contenido anterior;
 
-      resultadoDiv.appendChild(listaNotas);
-    }
-  }
-  
-  function verNota() {
-    const cedula = document.getElementById("cedula").value;
+  const cedula = document.getElementById("cedula").value;
+
+  try {
+    const response = await fetch('notas.json');
+    const notas = await response.json();
     const nota = notas[cedula];
-  
+
     if (!nota) {
-      mostrarResultado("Cédula no encontrada", "error");
-    } else {
-      mostrarResultado(nota);
+      resultadoDiv.textContent = "No se encontraron notas para la cédula proporcionada.";
+      return;
     }
+
+    const listaNotas = document.createElement("ul");
+    let acum = 0;
+    nota.forEach((nota, index) => {
+      const li = document.createElement("li");
+
+      if (index == 5) {
+        nota = acum;
+        li.innerHTML = `----------------------------
+        <br /> 📈 Total: <b> ${nota.toFixed(1)} </b> puntos`;
+        acum = 0;
+
+      } else {
+        acum += nota * 0.2;
+        li.textContent = `Tema ${index + 1}: ✏ ${nota.toFixed(1)} x 20%`;
+      }
+      listaNotas.appendChild(li);
+    });
+
+    resultadoDiv.appendChild(listaNotas);
+
+  } catch (error) {
+    resultadoDiv.textContent = "Error al cargar las notas.";
+    console.error("Error al cargar las notas:", error);
   }
+}
