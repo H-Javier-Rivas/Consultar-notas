@@ -20,7 +20,7 @@ async function verNota() {
       return;
     }
 
-    const pesos = [0.1, 0.3, 0.3]; // 10%, 30%, 30%
+    const pesos = [0.2, 0.2, 0.2]; // 20%, 20%, 20%
     const fragment = document.createDocumentFragment();
     let acum = 0;
 
@@ -42,3 +42,4 @@ async function verNota() {
     console.error("Error:", error);
   }
 }
+
