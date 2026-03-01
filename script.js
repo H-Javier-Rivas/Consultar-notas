@@ -15,7 +15,7 @@ async function verNota() {
     const notas = await response.json();
     const nota = notas[cedula];
 
-    if (!nota || !Array.isArray(nota) || nota.length > 3) {
+    if (!nota || !Array.isArray(nota) || nota.length > 4) {
       resultadoDiv.textContent = "No se encontraron notas válidas para la cédula.";
       return;
     }
@@ -42,5 +42,6 @@ async function verNota() {
     console.error("Error:", error);
   }
 }
+
 
 
